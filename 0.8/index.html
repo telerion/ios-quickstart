@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>README  Reference</title>
+    <title>  Reference</title>
     <link rel="stylesheet" type="text/css" href="css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="css/highlight.css" />
     <meta charset='utf-8'>
@@ -10,7 +10,7 @@
     
   </head>
   <body>
-    <a title="README  Reference"></a>
+    <a title="  Reference"></a>
     <header>
       <div class="content-wrapper">
         <p><a href="index.html"> Docs</a> (97% documented)</p>
@@ -20,23 +20,18 @@
       <p id="breadcrumbs">
         <a href="index.html"> Reference</a>
         <img id="carat" src="img/carat.png" />
-        README  Reference
+          Reference
       </p>
     </div>
     <div class="content-wrapper">
       <nav class="sidebar">
         <ul class="nav-groups">
           <li class="nav-group-name">
-            <a href="Guides.html">Guides</a>
-            <ul class="nav-group-tasks">
-              <li class="nav-group-task">
-                <a href="readme.html">README</a>
-              </li>
-            </ul>
-          </li>
-          <li class="nav-group-name">
             <a href="Classes.html">Classes</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Classes/TSDKChatMessage.html">TSDKChatMessage</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Classes/TSDKCore.html">TSDKCore</a>
               </li>
@@ -51,6 +46,9 @@
           <li class="nav-group-name">
             <a href="Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a href="Enums/TSDKCameraPosition.html">TSDKCameraPosition</a>
+              </li>
               <li class="nav-group-task">
                 <a href="Enums/TSDKSessionType.html">TSDKSessionType</a>
               </li>
@@ -76,22 +74,27 @@
             <h2 id='introduction' class='heading'>Introduction</h2>
 
 <p>The telerion SDK provides fast and easy way for iOS application to enable <a href="https://www.telerion.com">telerion</a> services which include messaging, voice and video, click-to talk, ICC, AI bots, etc.
-The SDK entry point is the class <a href="https://telerion-gmbh.github.io/ios-quickstart/docs/0.8/Classes/TSDKCore.html">[TSDKCore]</a> which includes the following functions:</p>
+The SDK entry point is the class <a href="https://telerion.github.io/ios-quickstart/0.8/Classes/TSDKCore.html">[TSDKCore]</a> which includes the following functions:</p>
 
 <ul>
 <li>Login  to <a href="https://www.telerion.com">telerion</a> server (or make authentication)</li>
 <li>Logout</li>
 <li>Make outgoing call</li>
 <li>Make outgoing chat</li>
-<li>Fire login/logout events
-Coming soon:</li>
+<li>Fire login/logout events</li>
+</ul>
+
+<p>Coming soon:</p>
+
+<ul>
 <li>Register for push notifications to receive notification on incoming call or message</li>
 <li>Handle push notifications</li>
 <li>Process incoming calls</li>
-<li>Process incoming chats
-Example how to make an outgoing call:</li>
+<li>Process incoming chats</li>
 </ul>
-<pre class="highlight plaintext"><code>     var sdk: TSDKCore?
+
+<p>Example how to make an outgoing call:</p>
+<pre class="highlight plaintext"><code>    var sdk: TSDKCore?
     var session : TSDKSession?
     sdk = TSDKCore("https://fuse.telerion.com/api")
     sdk.login("1234-5678-9012-3456")
@@ -100,13 +103,14 @@ Example how to make an outgoing call:</li>
     ...
 </code></pre>
 
-<p>The class  <a href="https://telerion-gmbh.github.io/ios-quickstart/docs/0.8/Classes/TSDKSession.html">[TSDKSession]</a>  represents an outgoing or incoming call or chat session. Possible session types are in the enum <a href="https://telerion-gmbh.github.io/ios-quickstart/docs/0.8/Classes/TSDKSessionType.html">[TSDKSessionType]</a>. 
-The class  <a href="https://telerion-gmbh.github.io/ios-quickstart/docs/0.8/Classes/TSDKSession.html">[TSDKSession]</a> includes various methods and events to manage active call or chat: mute, send DTMF, etc. See more details in our <a href="(https://telerion-gmbh.github.io/ios-quickstart/docs/latest/Classes/Classes.html)">[Classes]</a> description.</p>
+<p>The class  <a href="https://telerion.github.io/ios-quickstart/0.8/Classes/TSDKSession.html">[TSDKSession]</a>  represents an outgoing or incoming call or chat session. Possible session types are in the enum <a href="https://telerion.github.io/ios-quickstart/0.8/Classes/TSDKSessionType.html">[TSDKSessionType]</a>.</p>
+
+<p>The class  <a href="https://telerion.github.io/ios-quickstart/0.8/Classes/TSDKSession.html">[TSDKSession]</a> includes various methods and events to manage active call or chat: mute, send DTMF, etc. See more details in our <a href="(https://telerion.github.io/ios-quickstart/0.8/Classes/Classes.html)">[Classes]</a> description.</p>
 
           </section>
         </section>
         <section id="footer">
-          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-10-01)</p>
+          <p>&copy; 2019 <a class="link" href="" target="_blank" rel="external"></a>. All rights reserved. (Last updated: 2019-10-11)</p>
           <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.11.2</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
         </section>
       </article>
